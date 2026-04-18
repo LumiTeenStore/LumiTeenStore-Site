@@ -88,9 +88,9 @@ Edite o arquivo `lib/constants.ts` e ajuste:
 
 ```ts
 export const STORE_INFO: StoreInfo = {
-  whatsapp: "5511999999999",   // Número com DDI (sem + ou espaços)
-  instagram: "@lumiteen",
-  email: "contato@lumiteen.com",
+  whatsapp: "5598983158573", 
+  instagram: "@lumiteenstore",
+  email: "lumiteenstore@gmail.com",
 };
 ```
 

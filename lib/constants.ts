@@ -1,9 +1,9 @@
 import { ProductCategory, Size, StoreInfo } from "@/types";
 
 export const STORE_INFO: StoreInfo = {
-  whatsapp: "5511999999999",
-  instagram: "@lumiteen",
-  email: "contato@lumiteen.com",
+  whatsapp: "5598983158573",
+  instagram: "@lumiteenstore",
+  email: "lumiteenstore@gmail.com",
 };
 
 export const CATEGORIES: { value: ProductCategory | ""; label: string }[] = [

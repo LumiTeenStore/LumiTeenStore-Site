@@ -43,11 +43,15 @@ export default function LoginView() {
     <div className="min-h-screen bg-gradient-to-br from-[#FCFBFF] via-pink-50 to-purple-50 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-10">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#EF7CA1] to-[#B889BC] flex items-center justify-center mx-auto shadow-xl mb-4">
-            <span className="text-white font-bold text-2xl">L</span>
+          <div className="inline-block bg-white rounded-3xl px-6 py-4 shadow-xl mb-4">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logos/primary.png"
+              alt="Lumi Teen Store"
+              className="h-16 w-auto object-contain"
+            />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Painel Admin</h1>
-          <p className="text-gray-500 text-sm mt-1">Lumi Teen Store</p>
+          <p className="text-gray-500 text-sm font-semibold">Painel Administrativo</p>
         </div>
 
         <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8">

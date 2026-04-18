@@ -38,19 +38,15 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
+
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-lumi-pink to-lumi-lilac flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-base">L</span>
-            </div>
-            <div className="leading-none">
-              <span className="font-bold text-xl text-gray-900 tracking-tight">
-                Lumi
-              </span>
-              <span className="block text-xs text-lumi-pink font-semibold tracking-widest uppercase">
-                Teen Store
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logos/logo.png"
+              alt="Lumi Teen Store"
+              className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
+            />
           </Link>
 
           {/* Desktop Links */}
@@ -81,7 +77,6 @@ export default function Navbar() {
               Ver Peças
             </Link>
 
-            {/* Mobile menu button */}
             <button
               onClick={() => setMenuOpen((v) => !v)}
               className="md:hidden p-2 rounded-xl hover:bg-pink-50 transition-colors"
@@ -101,10 +96,19 @@ export default function Navbar() {
       <div
         className={cn(
           "md:hidden overflow-hidden transition-all duration-300",
-          menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         )}
       >
         <div className="bg-white border-t border-gray-100 px-4 py-4 space-y-1">
+          {/* Mini logo no menu mobile */}
+          <div className="flex justify-center mb-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logos/secondary.png"
+              alt="Lumi Teen Store"
+              className="h-10 w-auto object-contain opacity-80"
+            />
+          </div>
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}

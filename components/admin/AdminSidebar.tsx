@@ -24,18 +24,18 @@ export default function AdminSidebar() {
   return (
     <aside className="flex flex-col w-64 min-h-screen bg-white border-r border-gray-100 shadow-sm">
       {/* Logo */}
-      <div className="p-6 border-b border-gray-100">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-lumi-pink to-lumi-lilac flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-lg">L</span>
-          </div>
-          <div>
-            <p className="font-bold text-gray-900">Lumi</p>
-            <p className="text-xs text-lumi-pink font-semibold uppercase tracking-wider">
-              Admin
-            </p>
-          </div>
+      <div className="p-5 border-b border-gray-100">
+        <Link href="/" className="block">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logos/secondary.png"
+            alt="Lumi Teen Store"
+            className="h-12 w-auto object-contain"
+          />
         </Link>
+        <span className="mt-2 inline-block text-xs font-bold text-lumi-lilac bg-purple-50 px-2 py-0.5 rounded-full">
+          Admin
+        </span>
       </div>
 
       {/* Nav */}
